@@ -107,6 +107,8 @@ Currently Nix expressions don't install Node.js and NPM, so those have to be ins
 To do that, consult the repositories of the package manager of the according OS, or [download binaries](https://nodejs.org/en/download/). Please make sure you have Node.js version 6. You can use [nvm](https://github.com/creationix/nvm#installation)
 to install proper version.
 
+Ensure that GHC Compiler is installed, instructions for various linux distros can be found [here](https://support.rackspace.com/how-to/install-epel-and-additional-repositories-on-centos-and-red-hat/)
+
 Now run the following script:
 
     [nix-shell:~/cardano-sl]$ ./scripts/build/daedalus-bridge.sh
