@@ -57,7 +57,8 @@ Two steps remain, then:
     from the IOHK's binary caches) can be performed by building the attribute `cardano-sl-static`:
 
         $ nix-build -A cardano-sl-static --cores 0 --max-jobs 2 --no-build-output --out-link cardano-sl-1.0
-
+    NOTE: this command should be run from within the git cloened directory created in the 'Common build steps' section
+    
     The build output directory will be symlinked as `cardano-sl-1.0` (as specified by the command), and it will contain:
 
         $ ls cardano-sl-1.0/bin
